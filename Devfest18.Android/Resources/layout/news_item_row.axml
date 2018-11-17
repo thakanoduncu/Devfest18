@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+	android:background="#2F000000"
+	android:minHeight="40dp"
+    android:orientation="vertical">
+	<TextView
+		android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="4dp"
+        android:textColor="#CFD8DC"
+        android:textSize="15sp"
+        android:gravity="left"
+		android:textStyle="bold"
+        android:layout_margin="2dp" />
+	<TextView
+		android:id="@+id/source"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FFCC80"
+        android:textSize="13sp"
+        android:gravity="left"
+		android:textStyle="italic"
+		android:paddingLeft="4dp"
+		android:layout_margin="2dp"/>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+		<LinearLayout
+			android:orientation="horizontal"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:gravity="top">
+			<ImageView
+				android:id="@+id/thumbnail"
+				android:layout_width="150dp"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="2dp"
+				android:layout_marginRight="2dp"/>
+		</LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+				android:layout_marginLeft="2dp"
+				android:layout_marginRight="2dp"
+                android:textColor="#CFD8DC"
+                android:textSize="13sp"/>
+            <TextView
+                android:id="@+id/publishDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+				android:layout_margin="2dp"
+                android:textColor="#FFCC80"
+                android:textSize="13sp"
+                android:gravity="right" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
